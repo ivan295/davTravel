@@ -10552,17 +10552,11 @@ font-size:.85rem;
     .nav-bar{
 
         position:fixed;
-
         top:0;
-
         left:0;
-
         width:100%;
-
         z-index:99999;
-
         background:#00BFA6;
-
         box-shadow:0 5px 20px rgba(0,0,0,.08);
 
     }
@@ -10570,29 +10564,18 @@ font-size:.85rem;
       .nav-wrapper{
 
         position:fixed;
-
         top:0;
-
         left:0;
-
         width:100%;
-
         z-index:99999;
-
         background:#00BFA6;
-
-        box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-        padding:0;
-
+        height: 74px;
     }
 
     .nav-wrapper .container-fluid{
 
         width:100%;
-
         padding:0 !important;
-
         margin:0;
 
     }
@@ -10693,8 +10676,8 @@ text-align:center;
 
 #header-carousel{
 
-margin-top:0px;
-
+margin-top:74px;
+ height:calc(100svh - 74px);
 }
 
 }
