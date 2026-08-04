@@ -10480,13 +10480,24 @@ font-size:.85rem;
 
 @media (min-width: 992px){
 
-    .nav-bar{
+    .nav-wrapper{
 
         position:absolute;
         top:0;
         left:0;
         width:100%;
         z-index:9999;
+
+    }
+
+    .nav-bar{
+
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        z-index:9999;
+        padding: 0px;
 
     }
 
@@ -10507,6 +10518,26 @@ font-size:.85rem;
         -webkit-backdrop-filter:blur(18px);
 
         box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+    }
+     .nav-bar .container-lg{
+
+        max-width:100%;
+
+        width:100%;
+
+        padding:0;
+
+        margin:0;
+
+    }
+    .navbar{
+
+        width:100%;
+
+        padding:12px 18px;
+
+        background:transparent !important;
 
     }
 
@@ -10536,6 +10567,36 @@ font-size:.85rem;
 
     }
 
+      .nav-wrapper{
+
+        position:fixed;
+
+        top:0;
+
+        left:0;
+
+        width:100%;
+
+        z-index:99999;
+
+        background:#00BFA6;
+
+        box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+        padding:0;
+
+    }
+
+    .nav-wrapper .container-fluid{
+
+        width:100%;
+
+        padding:0 !important;
+
+        margin:0;
+
+    }
+
     .container-lg{
 
         max-width:100%;
@@ -10558,6 +10619,12 @@ font-size:.85rem;
 
 @media(max-width:991.98px){
 
+  .navbar-brand{
+
+margin:0;
+
+}
+
 .navbar-brand img{
 
 height:58px;
@@ -10570,9 +10637,9 @@ width:auto;
 
 .navbar-toggler{
 
-    border:none;
+    padding:8px;
 
-    box-shadow:none;
+    border:none;
 
 }
 
@@ -10588,13 +10655,13 @@ width:auto;
 
 background:#00BFA6;
 
-margin-top:18px;
+margin-top:15px;
 
-padding:18px;
+padding:20px;
 
 border-radius:20px;
 
-box-shadow:0 20px 45px rgba(0,0,0,.12);
+box-shadow:0 15px 35px rgba(0,0,0,.10);
 
 }
 
@@ -10610,11 +10677,11 @@ width:100%;
 
 .navbar-nav .nav-link{
 
-padding:15px 0;
+padding:14px 0;
 
 font-size:17px;
 
-font-weight:600;
+/* font-weight:600; */
 
 text-align:center;
 
@@ -10626,12 +10693,27 @@ text-align:center;
 
 #header-carousel{
 
-margin-top:82px;
+margin-top:0px;
 
 }
 
 }
 
+/* Botón hamburguesa */
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Icono blanco */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
 /* @media(max-width:991.98px){
 
 .top-social{
