@@ -23,22 +23,39 @@
 
 
     // Scroll Effects
+    // $(window).scroll(function () {
+
+    //     // Back To Top
+    //     if ($(this).scrollTop() > 100) {
+    //         $('.back-to-top').fadeIn('slow');
+    //     } else {
+    //         $('.back-to-top').fadeOut('slow');
+    //     }
+    //     // Navbar Fixed Effect
+    //     if ($(this).scrollTop() > 60) {
+    //         $('.navbar').addClass('navbar-scrolled');
+    //     } else {
+    //         $('.navbar').removeClass('navbar-scrolled');
+    //     }
+
+    // });
     $(window).scroll(function () {
 
-        // Back To Top
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-        // Navbar Fixed Effect
+    if ($(window).width() >= 992) {
+
         if ($(this).scrollTop() > 60) {
+
             $('.navbar').addClass('navbar-scrolled');
+
         } else {
+
             $('.navbar').removeClass('navbar-scrolled');
+
         }
 
-    });
+    }
+
+});
 
 
     // Back To Top Click

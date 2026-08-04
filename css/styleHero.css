@@ -22,7 +22,7 @@
     overflow:hidden;
 
 }
-.hero-image{
+/* .hero-image{
 
     width:100%;
 
@@ -33,6 +33,20 @@
     transform:scale(1);
 
     animation:heroZoom 18s linear infinite;
+
+} */
+.hero-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center center;
+}
+@media (max-width: 768px){
+
+    .hero-image{
+        height: 100vh;
+        object-position: center;
+    }
 
 }
 .hero-container{
@@ -224,10 +238,12 @@
     inset:0;
 
     background:
-        linear-gradient(
-            rgba(0,0,0,.55),
-            rgba(0,0,0,.45)
-        );
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,.75) 0%,
+        rgba(0,0,0,.45) 45%,
+        rgba(0,0,0,.20) 100%
+    );
 
     z-index:1;
 
@@ -285,7 +301,7 @@
 
     box-shadow:0 20px 60px rgba(0,0,0,.25);
 
-} 
+}
 /* maybe */
 
 @keyframes heroZoom{
@@ -404,6 +420,160 @@ font-size:.8rem;
 padding:18px;
 
 border-radius:18px;
+
+}
+
+}
+
+/*=========================================
+            HERO MOBILE
+=========================================*/
+
+@media (max-width: 991.98px){
+
+    .hero-container{
+
+        display:flex;
+        justify-content:center;
+        align-items:center;
+
+        padding:0 25px;
+
+    }
+
+    .hero-content{
+
+        width:100%;
+
+        display:flex;
+        flex-direction:column;
+
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+
+        margin:0 auto;
+
+    }
+
+}
+
+@media(max-width:991.98px){
+
+.hero-title{
+
+width:100%;
+
+text-align:center;
+
+margin-bottom:20px;
+
+}
+
+}
+
+@media(max-width:991.98px){
+
+.hero-subtitle{
+
+width:100%;
+
+text-align:center;
+
+margin-bottom:18px;
+
+}
+
+}
+
+@media(max-width:991.98px){
+
+.hero-description{
+
+width:100%;
+
+max-width:420px;
+
+margin:auto;
+
+text-align:center;
+
+line-height:1.7;
+
+}
+
+}
+
+@media(max-width:991.98px){
+
+.hero-buttons{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+gap:15px;
+
+width:100%;
+
+margin-top:30px;
+
+}
+
+.hero-buttons .btn{
+
+width:100%;
+
+max-width:280px;
+
+}
+
+}
+@media(max-width:991.98px){
+
+.hero-stats{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+margin-top:30px;
+
+}
+
+}
+.carousel-caption{
+
+right:15%;
+left:15%;
+}
+
+@media(max-width:991.98px){
+
+.carousel-caption{
+
+left:0;
+
+right:0;
+
+padding:0 20px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
 
 }
 
